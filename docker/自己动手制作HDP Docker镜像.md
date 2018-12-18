@@ -359,5 +359,6 @@
     //4. 浏览器访问 http://hdp1:8080，并Start all
     ```
 14. 以上是ambari-server的安装配置，ambari-agent我还不会搭；
-15. 最后，如果有任何建议或发现任何问题，请联系我的QQ 119647515 ，另外转载请注明出处。
+15. 最后，如果有任何建议或发现任何问题，请联系我的QQ 119647515 
+另外转载请注明出处: https://github.com/SJ5J/notebook/blob/master/docker/自己动手制作HDP%20Docker镜像.md
 
