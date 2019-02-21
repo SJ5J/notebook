@@ -1,4 +1,7 @@
-t与svn的区别
+# 1. 版本控制
+- 版本控制的需求：修改了一个或多个文件，需要撤回修改。
+
+# 2. git与svn的区别
 - 文件存储
     - svn：只存储文件修改的增量信息。当代码修改越来越多，速度会越来越慢。
     - git：对于修改的文件保留其快照（整个文件？），对于未修改的文件保留其索引(HASH)，用空间换时间。
@@ -53,7 +56,7 @@ git pick-cherry
 ```
 # 6. 操作流程
 1. mkdir test && cd test && git init
-2.  配置仓库(提交者的信息：名字和邮箱)
+2.  配置仓库
     - git config --global user.name "SJ"
     - git config --global user.email "119647515@qq.com"
     - git config --list
