@@ -56,19 +56,19 @@ git pick-cherry
 ```
 # 6. 操作流程
 1. mkdir test && cd test && git init
-2.  配置仓库
-    - git config --global user.name "SJ"
-    - git config --global user.email "119647515@qq.com"
+2.  配置仓库(提交者信息：git帐号的用户名和邮箱)
+    - git config --global user.name "SJ5J"
+    - git config --global user.email "song-jian1234@163.com"
     - git config --list
     - 配置范围：
         - --system 针对所有用户
         - --global 针对当前用户
         - 缺省，当前项目
         - 级别： 当前项目 > global > system
-3. 实现git免密码：生成密钥，并把公钥配到github上
-    - ssh-keygen -t rsa -C "119647515@qq.com"  (需要输入 /root/.ssh/id_rsa_github，然后两次回车)
+3. 生成密钥，并把公钥配到github上
+    - ssh-keygen -t rsa -C "song-jian1234@163.com"  (需要输入 /root/.ssh/id_rsa_github，然后两次回车)
     - cat /root/.ssh/id_rsa_github.pub
-    - 复制公钥，粘帖到github的头像->settings->SSH and GPG keys->右上角New SSH key
+    - 复制公钥，粘帖到github的头像-> settings-> SSH and GPG keys->右上角New SSH key
     - ssh -T git@github.com  (测试)
 4. 在github页面上创建远程仓库: firstrepo
 5. echo "# first git test" >> README.md
